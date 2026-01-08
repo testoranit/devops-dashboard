@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DevOps Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            text-align: center;
+            padding-top: 60px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 12px;
+            width: 350px;
+            margin: auto;
+            box-shadow: 0 0 20px rgba(0,0,0,0.4);
+        }
+        h1 {
+            margin-bottom: 10px;
+        }
+        .badge {
+            background: #00c853;
+            padding: 5px 12px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h1>🚀 DevOps Dashboard</h1>
+    <div class="badge">Application Running</div>
+    <p><b>Environment:</b> {{ environment }}</p>
+    <p><b>Version:</b> {{ version }}</p>
+    <p><b>Uptime:</b> {{ uptime }} seconds</p>
+</div>
+
+</body>
+</html>
+
